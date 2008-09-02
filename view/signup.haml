@@ -1,0 +1,27 @@
+!!!
+
+%html
+  %head
+    %title Signup for Ruby and Pizza
+
+  %body
+    %h1 Signup
+	
+    %p Use the form below to say you are coming
+	
+    %form{ :action => 'coming'}
+
+      %p Your name
+      %div
+        %input{ :type => 'text', :name => 'name'}
+
+      %div
+        %p Your pizza
+        %select{:name => 'pizza-type'}
+          %option Veggie
+          %option Meaty
+          %option Spicy
+          %option Cheesy and Tomato-ey
+
+      %p
+        %input{:type => 'submit', :value => 'I\'ll be there!'}
