@@ -11,6 +11,17 @@ class MainController < Ramaze::Controller
     @next_date = "Tuesday"
   end
   
+  def signup
+  end
+
+  def coming
+    @pizza = "pizza"
+  end
+
+  def who
+    @tuesdays = ['Tuesday 1', 'Tuesday 2']
+  end
+
 end
 
 Ramaze.start
