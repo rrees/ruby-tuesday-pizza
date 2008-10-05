@@ -21,8 +21,8 @@ class MainController < Ramaze::Controller
   end
 
   def coming
-    @name = "Robert"
-    @pizza = "Meaty"
+    @name = request['name']
+    @pizza = request['pizza-type']
  
     @confirmation = Confirmation.new(@name, @pizza) 
  
