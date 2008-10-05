@@ -20,7 +20,7 @@ class MainController < Ramaze::Controller
   def signup
   end
 
-  def coming()
+  def coming
     @name = "Robert"
     @pizza = "Meaty"
  
