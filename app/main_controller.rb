@@ -1,10 +1,15 @@
 require 'rubygems'
 require 'ramaze'
 require "#{File.dirname(__FILE__)}/tuesday"
+require "#{File.dirname(__FILE__)}/confirmation"
+
+require 'ramaze/store/default'
 
 class MainController < Ramaze::Controller
 
   engine :Haml
+  
+  DB = Ramaze::Store::Default.new("#{File.dirname(__FILE__)}/../data/pizza.yaml")
   
   def index
     @title = "Welcome to Ruby Tuesdays"
@@ -15,8 +20,14 @@ class MainController < Ramaze::Controller
   def signup
   end
 
-  def coming
-    @pizza = "pizza"
+  def coming()
+    @name = "Robert"
+    @pizza = "Meaty"
+ 
+    @confirmation = Confirmation.new(@name, @pizza) 
+ 
+    DB[@confirmation.name] =  @confirmation
+    
   end
 
   def who
