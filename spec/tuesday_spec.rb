@@ -19,6 +19,7 @@ describe Tuesday do
   end
   
   it "should allow people to sign up to it"
+  
   it "should know who's coming to it"
   it "should tell you what pizzas to buy"
 
