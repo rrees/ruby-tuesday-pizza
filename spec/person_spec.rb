@@ -25,4 +25,15 @@ describe Person do
   it "should not allow empty names" do
     proc { Person.new }.should raise_error
   end
+  
+  it "should have a default pizza preference" do
+    person = Person.new :name => 'Rob'
+    person.preference.should == Pizza::DEFAULT
+  end
+  
+  it "should have a pizza preference" do
+    person = Person.new :name => 'Rob', :pizza => Pizza::MEATY
+    person.preference.should == Pizza::MEATY
+  end
+  
 end
