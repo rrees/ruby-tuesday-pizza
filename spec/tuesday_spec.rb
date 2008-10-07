@@ -1,4 +1,4 @@
-require "#{File.dirname(__FILE__)}/../app/tuesday"
+require "#{File.dirname(__FILE__)}/spec_helper"
 
 describe Tuesday do
 

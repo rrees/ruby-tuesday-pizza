@@ -1,5 +1,4 @@
-require "#{File.dirname(__FILE__)}/../app/main_controller.rb"
-
+require "#{File.dirname(__FILE__)}/spec_helper"
 
 describe MainController do
   
