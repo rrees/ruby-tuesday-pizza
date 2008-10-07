@@ -9,8 +9,6 @@ class MainController < Ramaze::Controller
 
   engine :Haml
   
-  DB = Ramaze::Store::Default.new("#{File.dirname(__FILE__)}/../data/pizza.yaml")
-  
   def index
     @title = "Welcome to Ruby Tuesdays"
     @content = "Do you want pizza?"

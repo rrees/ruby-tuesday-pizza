@@ -3,9 +3,9 @@ class Confirmation
   
   attr_reader :name, :choice
   
-  def initialize(name, choice) 
-    @name = name
-    @choice = choice
+  def initialize(fields={}) 
+    @name = fields[:name]
+    @choice = fields[:choice]
   end
 
 end

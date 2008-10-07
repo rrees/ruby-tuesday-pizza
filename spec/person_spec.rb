@@ -35,5 +35,5 @@ describe Person do
     person = Person.new :name => 'Rob', :pizza => Pizza::MEATY
     person.preference.should == Pizza::MEATY
   end
-  
+
 end
