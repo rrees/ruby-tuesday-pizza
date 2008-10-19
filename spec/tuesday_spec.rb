@@ -18,6 +18,10 @@ describe Tuesday do
     Tuesday.next.next.to_s.should == '2008-09-23'
   end
   
+  it "should have a human readable date label" do
+  	Tuesday.next.label.should == '09/09/2008'
+  end
+  
   it "should allow people to sign up to it"
   
   it "should know who's coming to it"

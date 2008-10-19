@@ -1,11 +1,10 @@
 class Pizza
-  DEFAULT = Pizza.new "Cheesy and Tomato-ey"
-  MEATY = Pizza.new "Meaty"
-  SPICY = Pizza.new "Spicy"
-  
+	DEFAULT = Pizza.new
+	MEATY = Pizza.new
+	SPICY = Pizza.new  
   attr_reader :name
   
-  def initialize(name)
-    @name = name
+  def initialize(opts={})
+    @name = opts[:name]
   end
 end

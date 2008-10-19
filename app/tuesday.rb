@@ -22,6 +22,10 @@ class Tuesday
     Tuesday.new(@date + 14)
   end
 
+	def label
+		@date.strftime("%d/%m/%Y")
+	end
+	
   def to_s
     @date.strftime("%Y-%m-%d")
   end

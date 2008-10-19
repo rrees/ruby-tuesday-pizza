@@ -2,6 +2,7 @@ require 'rubygems'
 require 'ramaze'
 require "#{File.dirname(__FILE__)}/tuesday"
 require "#{File.dirname(__FILE__)}/confirmation"
+require "#{File.dirname(__FILE__)}/pizza"
 
 require 'ramaze/store/default'
 
