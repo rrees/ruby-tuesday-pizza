@@ -28,8 +28,13 @@ class MainController < Ramaze::Controller
  
     @confirmation = Confirmation.new({:name => @name, :choice => @pizza}) 
  
-    DB[@confirmation.name] =  @confirmation
-    
+ 	tuesday_key = Tuesday.next.label
+ 
+ 	if !DB[tuesday_key]
+    	DB[tuesday_key] = Array.new()
+    end
+   	DB[tuesday_key] =  DB[tuesday_key] << @confirmation
+   
   end
 
   def who
